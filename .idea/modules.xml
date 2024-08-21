@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/_programming/sample code/QuickAction3D/trunk/NewQuickAction3D.iml" filepath="C:/_programming/sample code/QuickAction3D/trunk/NewQuickAction3D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://C:/_programming/_imported projects/color-picker-view/trunk/color-picker.iml" filepath="C:/_programming/_imported projects/color-picker-view/trunk/color-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notesdatabase.iml" filepath="$PROJECT_DIR$/notesdatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robolectric/robolectric.iml" filepath="$PROJECT_DIR$/robolectric/robolectric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robotium/robotium.iml" filepath="$PROJECT_DIR$/robotium/robotium.iml" />
+    </modules>
+  </component>
+</project>
+

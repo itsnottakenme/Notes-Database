@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="kanana.notesdatabase"
+          android:versionCode="1"
+
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!--        permissions for internet   android:theme="@style/CodeFont"  android:theme="@android:style/TextAppearance.Medium"     android:name="kanana.notesdatabase.NdbApp"-->
+
+    <!--
+    works:                   android:theme="@android:style/Theme.Holo
+    doesn't work:            android:theme="@android:style/Theme.Light
+    -->
+
+
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_ndb"
+                 android:theme="@style/ndbLight"
+                 uiOptions="splitActionBarWhenNarrow"
+
+
+                  >
+
+
+
+
+
+        <activity android:name="ndb.ui.activities.NotebookListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+        <!-- Tr adding to editnoteactivity.. need to delete all actionbar code though so doesnt throw an error
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+        -->
+        <activity android:name="ndb.ui.activities.EditNoteActivity"
+                  android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="EditNoteActivity.intent.action.Launch" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ndb.ui.activities.NoteListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ndb.ui.activities.EditNotebookActivity"
+                  android:windowSoftInputMode="stateAlwaysVisible"/>
+
+
+
+        <activity android:name="ndb.ui.activities.PreferencesActivity" />
+
+
+        <activity android:name="ndb.temp.ExperimentActivity"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ndb.ui.activities.AdvancedFeaturesActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ndb.ui.activities.TodoListActivity"
+                  android:windowSoftInputMode="adjustPan"
+            />
+
+
+        <activity android:name="ndb.ui.activities.GoogleDriveSetupActivity"/>
+        <activity android:name="ndb.temp.StartEditNoteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ndb.ui.activities.NdbGoogleDriveSetupActivity"/>
+
+        <activity android:name="ndb.ui.activities._ExperimentalActivity"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ndb.ui.activities.GroceryListActivity"/>
+
+
+        <provider android:name="ndb.types.MediaProvider"
+                  android:authorities="ndb.mediaprovider"
+                  android:exported="true" />
+
+
+
+    </application>
+</manifest>
+

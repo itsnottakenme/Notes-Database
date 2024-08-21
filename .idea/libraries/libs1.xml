@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ndb_roboelectric/libs/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ndb_roboelectric/libs/robolectric-2.1.1-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ndb_roboelectric/libs/hamcrest-core-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
